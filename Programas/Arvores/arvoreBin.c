@@ -29,10 +29,9 @@ Node *insere (Node *a, int value){
 void imprime( Node *a){
   while(a != NULL){
     imprime(a->esq);
-
-    //imprime(a->dir);
+    printf("%d\n",a->data);
+    imprime(a->dir);
   }
-  printf("%d\n",a->data);
 }
 
 
